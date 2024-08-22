@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css예제</title>
+  <!-- css내부정의 -->
+   <style>
+     /*전체 선택자:*/
+     *{background-color:lemonchiffon;}
+     /*태그 선택자: 태그 이름으로 요소를 선택*/
+    h1{color:lightcoral;}
+    /*아이디선택자*/
+    #msh{
+      background-color: lightslategray;
+    }
+    /*클래스선택자*/
+    .web{
+      color: lavender;
+    }
+   </style>
+   <!-- css외부정의 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- css인라인 정의 -->
+  <h1 id="msh" style="color: pink;">제목태그1-1</h1>
+  <h1 id="wsh" class="web">제목태그1-2</h1>
+  <h1>제목태그1-3</h1>
+  <h1 class="web">제목태그1-4</h1>
+  <h2>제목태그2</h2>
+  <h3 class="web">제목태그3</h3>
+  <h4>제목태그4</h4>
+</body>
+</html>
