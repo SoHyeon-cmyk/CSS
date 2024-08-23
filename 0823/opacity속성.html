@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opacity속성</title>
+    <style>
+      .container>span{
+        background-color: steelblue;
+        color: aliceblue;
+        font-size: 20px;
+      }
+      .box1{
+        opacity: 0;
+      }
+      .box2{
+        opacity: 0.5;
+      }
+      .box3{
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 속성값은 0에서 1사이의 소수점 값을 사용 -->
+     <!-- .container>span.box${opacity:$}*3 -->
+    <div class="container">
+      <span class="box1">opacity:0</span>
+      <span class="box2">opacity:0.5</span>
+      <span class="box3">opacity:1</span>
+    </div>
+  </body>
+</html>
