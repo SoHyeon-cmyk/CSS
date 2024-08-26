@@ -10,9 +10,9 @@
         font-size:30px;
         border:none;
         /*이곳에 코드 작성*/
-        height: 200px;
-        width: 100px;
-
+        height: 100px;
+        width: 200px;
+        /* display가 인라인블록이라서 width와 height를 적용가능 */
         /*================*/
     }
     a{
@@ -21,10 +21,11 @@
         color:white;
         font-size:30px;
         /*이곳에 코드 작성*/
-        height: 200px;
-        width: 100px;
-        
+        height: 100px;
+        width: 200px;
+        /* a요소는 인라인태그라서 witdh와 height값을 줄 수 없다 */
         /*================*/
+        display: inline-block;/*display속성을 변경하여 높넓이 값적용 */
     }
 </style>
 </head>
