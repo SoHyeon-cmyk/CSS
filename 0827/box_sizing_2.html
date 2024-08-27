@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box_sizing</title>
+  <style>
+    .container{
+      width: 300px;
+      border: 1px solid red;
+      background-color: #ababab;
+    }
+    .box1{
+      width: 100%;
+      background-color: skyblue;
+      border: 10px solid black;
+      box-sizing: content-box;/*기본값*/
+      /* 요소의 넓이가 100%(요소가 차지할 수 있는 최대 넓이)에서 테두리 10xp
+      만큼만 추가되어 부모 요소보다 커짐. 결과적으로 레이아웃이 무너짐 */
+    }
+    .box2{
+      width: 100%; /*블럭요소는 넓이를 기본적으로 100%를 차지 */
+      background-color: lightsteelblue;
+      border: 10px solid  black;
+      /* box-sizing속성을 bodrer-box로 설정하면 witdh100%에 border가 포함되어 결과적으로 
+      witdh가 100%이상 늘어나지 않음 */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+  </div>
+</body>
+</html>
