@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg_origin속성</title>
+  <style>
+    div{
+      width: 400px;
+      height: 260px;
+      padding: 20px;
+      margin:20px;
+      border: 8px dashed orange;
+      background-image: url(/이미지예제/bg_image/christmas.png);
+      background-repeat: no-repeat;
+    }
+    #text1{
+      /* 배경이미지 위치가 content 영역에서 부터 시작하고 콘텐츠 영역까지 
+      배경이미지가 표현됨 */
+      background-origin: content-box;
+      background-clip: content-box;
+    }
+    #text2{
+      background-origin: padding-box;
+      background-origin: padding-box;
+    }
+    #text3{
+      background-origin:border-box;
+      background-clip: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="text1">
+    <h3>background-origin:content-box</h3>
+  </div>
+  <div id="text2">
+    <h3>background-origin:padding-box</h3>
+  </div>
+  <div id="text3">
+    <h3>background-origin:border-box</h3>
+  </div>
+</body>
+</html>
