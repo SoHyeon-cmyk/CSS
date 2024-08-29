@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gradient속성</title>
+  <style>
+    /* linearGradient(각도,색상값,위치,색상값,위치,...) */
+    .gradient1{
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 60px;
+      text-align: center;
+      background-color: rgb(170, 238, 255);
+      background:linear-gradient(0deg, #f16f5c 30%, #7efff4 100%);
+    }
+    .gradient2{
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      background: repeating-linear-gradient(45deg, lightcoral, lightsteelblue 50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient1">
+    <h1>css3 Gradient</h1>
+  </div>  
+  <div class="gradient2"></div>
+</body>
+</html>

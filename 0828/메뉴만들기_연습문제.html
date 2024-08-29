@@ -15,35 +15,40 @@
       /*각 영역의 높이를 지정*/
       section {
         height: 800px;
-        color: #fff;
         width: 1000px;
+        color: #fff;
+        margin: auto;
       }
-      li{
-        float:left;
+      nav{
+        text-align: center;
+      }
+      ul {
+        width: 1000px;
+        display: inline-block;
         list-style: none;
+        text-align: center;
+      }
+      nav > ul > li {
         background-color: gainsboro;
+        padding:0 50px;
+        float: left;
         height: 80px;
         line-height: 80px;
-        border-radius: 10px;
       }
-      a{
+      a {
         color: inherit;
         text-decoration: none;
-        display: block;
-        padding:0 30px;
+        display:block;
       }
-      ul{
-        border-radius: 10px;
-        display: inline-block;
-      }
-      a:hover{
+      a:hover {
         color: #fff;
         background-color: darkcyan;
-        display: block;
         border-radius: 10px;
       }
-
-
+      /* 스크롤 애니메이션 */
+      html {
+        /* scroll-behavior: smooth; */
+      }
 
       #home {
         background-color: pink;
@@ -66,11 +71,11 @@
     <nav>
       <!--이곳에 내비게이션 작성-->
       <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">profile</a></li>
-        <li><a href="#">portfolio</a></li>
-        <li><a href="#">skill</a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#skill">skill</a></li>
       </ul>
     </nav>
     <section id="home">home</section>
