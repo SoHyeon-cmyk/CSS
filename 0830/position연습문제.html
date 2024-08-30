@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>position_ex</title>
+    <style>
+      p {
+        font-size: 20px;
+      }
+      div.parent {
+        width: 600px;
+        height: 600px;
+        outline: 1px solid #666;
+        position: relative;
+      }
+      div.box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+      div.red {
+        background-color: red;
+        left: 19%;
+        top: 19%;
+        z-index: 3;
+      }
+      div.green {
+        background-color: green;
+        left: 26%;
+        top: 26%;
+        z-index: 2;
+      }
+      div.blue {
+        background-color: blue;
+        left: 33%;
+        right: 33%;
+        top: 33%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>연습 예제</h1>
+    <p>position속성과 z-index속성을 이용하여 정렬하시오</p>
+    <div class="parent">
+      <div class="box red"></div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position2</title>
+  <style>
+    nav{
+      width: 500px;
+      border: 10px solid lightcoral;
+    }
+    nav>img, section>img{
+      display: block;/*여백을 없애기 위해 값을 줌*/
+    }
+    section{
+      width: 500px;
+      border: 5px solid lightsteelblue;
+      position: relative;
+    }
+    section>div{
+      font-size: 2rem;
+      background-color: aliceblue;
+      position: absolute;
+      /* relative값을 가진 부모요소 안에서 위치 이동 가능 */
+      bottom: 0;
+      right: 0;
+      display: none;/*요소제거*/
+    }
+    /* section에 마우스를 올려두면 그의 자식인 div가 나타난다 */
+    section:hover>div{
+      display: block;
+    }
+    article{
+      border: 10px solid lightcoral;
+      width: 500px;
+      position: relative;
+    }
+    article>div{
+      font-size: 2rem;
+      background-color: aliceblue;
+      position: absolute;
+    }
+    article>div:nth-of-type(1){
+      top: 0;
+      bottom: 50%; /*고정된 height 값과 같이 못씀*/
+      left: 0;
+      right: 50%
+    }
+    article>div:nth-of-type(2){
+      top: 50%;
+      bottom: 0%; /*고정된 height 값과 같이 못씀*/
+      left: 50%;
+      right: 0%
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="https://github.com/jmk255/source/blob/main/color1.png?raw=true" alt="">
+  </nav>
+  
+  <section>
+    <img src="https://github.com/jmk255/source/blob/main/color.png?raw=true" alt="">
+    <div>티셔츠</div>
+  </section>
+
+  <article class="s2">
+    <img src="https://github.com/jmk255/source/blob/main/color.png?raw=true" alt="">
+    <div>티셔츠</div>
+    <div>티셔츠</div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Down_menu</title>
+    <style>
+      .sub {
+        display: none;
+      }
+      /* a요소에 마우스를 올리면 형제 요소인 sub이 화면에 표시 */
+      .menu-box > ul > li:hover > .sub {
+        display: block;
+      }
+      .menu-box > ul > li:hover > a {
+        background-color: gold;
+      }
+      .sub > li > a:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu-box">
+      <ul>
+        <li>
+          <a href="#">1차 메뉴 아이템</a>
+          <ul class="sub">
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">1차 메뉴 아이템</a>
+          <ul class="sub">
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">1차 메뉴 아이템</a>
+          <ul class="sub">
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">1차 메뉴 아이템</a>
+          <ul class="sub">
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+            <li><a href="#">2차 메뉴 아이템</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
