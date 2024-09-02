@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlay</title>
+  <style>
+    .container{
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+    }
+    .container>img{
+      display: block;
+      width: 100%;
+    }
+    .overlay{
+      position: absolute;
+      /* left: 0;
+      top: 0; */
+      color: aliceblue;
+      /* width: 100%;
+      height: 100%; */
+      left: 50%;
+      top: 50%;
+      font-size: 2rem;
+      transform: translate(-50%, -50%);
+      /* display: none; */
+      transition:1s;
+      opacity: 0;
+    }
+    .container:hover>.overlay{
+      /* display: block; */
+      transition:1s;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/이미지예제/bg/luke-stackpoole-BIzowjmRc_g-unsplash (1).jpg" alt="">
+    <div class="overlay">
+      <div class="txt">Hello World!</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소</title>
+  <style>
+    /* ::before=선택한 요소의 첫번쨰 자식요소로 가상요소를 생성
+    ::after=선택한 요소의 마지막 자식요소로 가상요소를 생성
+    ::selection= 선택한 텍스트*/
+    li{
+      margin-bottom: 10px;
+    }
+    a{
+      text-decoration: none;
+      border-bottom: 3px dotted navy;
+    }
+    /* a의 마지막 자손으로 가상요소 선택 */
+    a::after{
+      content: "("attr(id)")";
+    }
+    /* 아이디가 naver인 요소에 첫번쨰 자손으로 가상요소 선택 */
+    #naver::before{
+      content: url(/이미지예제/icon/naver.PNG);
+    }
+    #daum::before{
+      content: url(/이미지예제/icon/daum.png);
+    }
+    /* content를 쓸 때, 대표적으로 사용되는 속성들
+    normal:아무것도 표시하지 않는 기본 값
+    string: 문자열 생성
+    url: 이미지나 비디오를 불러올 수 있음, 크기조절불가능
+    none: 아무것도 표시하지 않음
+    attr: 해당 속성의 속성값을 표시 */
+
+    /* content:"";=가짜속성
+    before와 after를 쓸 땐 content라는 속성이 꼭 필요함 */
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a id="naver" href="https://naver.com">Naver</a></li>
+  </ul>
+  <ul>
+    <li><a id="daum" href="https://daum.net">Daum</a></li>
+  </ul>
+</body>
+</html>

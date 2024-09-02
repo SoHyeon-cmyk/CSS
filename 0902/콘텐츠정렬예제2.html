@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습예제</title>
+    <style>
+      .container {
+        margin: auto;
+        width: 1080px;
+        overflow: auto;
+      }
+      .box {
+        float: left;
+        width: 250px;
+        height: 240px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 10px;
+        position: relative;
+      }
+      .box1 {
+        background-image: url(/이미지예제/background/barbara-krysztofiak-EvqBf_1MBBg-unsplash.jpg);
+      }
+      .box2 {
+        background-image: url(/이미지예제/background/felix-mittermeier-ecGF7uTqxAE-unsplash.jpg);
+      }
+      .box3 {
+        background-image: url(/이미지예제/background/felix-mittermeier-X_rJfNo0CdQ-unsplash.jpg);
+      }
+      .box4 {
+        background-image: url(/이미지예제/background/jakayla-toney-EPjy-ftXb_c-unsplash.jpg);
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0;
+        padding-left: 8px;
+      }
+      h2,p {
+        color: aliceblue;
+        padding: 0 10px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 0;
+      }
+      .overlay {
+        position: absolute;
+        transition: all 1s;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .box:hover > .overlay {
+        transition: all 1s;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <div class="overlay">
+          <h2>Subtitle</h2>
+          <p>이 고양이는 귀엽습니다.</p>
+          <div class="icon">
+            <img src="/이미지예제/background/cat-solid.svg" alt="" />
+            <img src="/이미지예제/background/paw-solid.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box box2">
+        <div class="overlay">
+          <h2>Subtitle</h2>
+          <p>이 고양이는 귀엽습니다.</p>
+          <div class="icon">
+            <img src="/이미지예제/background/cat-solid.svg" alt="" />
+            <img src="/이미지예제/background/paw-solid.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="overlay">
+          <h2>Subtitle</h2>
+          <p>이 고양이는 귀엽습니다.</p>
+          <div class="icon">
+            <img src="/이미지예제/background/cat-solid.svg" alt="" />
+            <img src="/이미지예제/background/paw-solid.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box box4">
+        <div class="overlay">
+          <h2>Subtitle</h2>
+          <p>이 고양이는 귀엽습니다.</p>
+          <div class="icon">
+            <img src="/이미지예제/background/cat-solid.svg" alt="" />
+            <img src="/이미지예제/background/paw-solid.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

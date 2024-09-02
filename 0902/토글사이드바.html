@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>토글사이드바</title>
+    <style>
+      * {
+        margin: 0 0;
+        padding: 0 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .side-bar {
+        width: 300px;
+        height: 100%;
+        background-color: gainsboro;
+        position: absolute;
+        left: -270px; /*밖으로 270픽셀내보냄*/
+        transition: all 0.5s;
+      }
+      .status-icon > div {
+        padding: 6px;
+        text-align: right;
+      }
+      .status-icon > div:last-child {
+        display: none;
+      }
+      /* 사이드바에 호버하면 뷰포트안쪽으로 이동 */
+      .side-bar:hover {
+        left: 0;
+        background-color: black;
+        color: aliceblue;
+        transition: all 0.5s;
+      }
+      .side-bar:hover > .status-icon > div:first-child {
+        display: none;
+      }
+      .side-bar:hover > .status-icon > div:last-child {
+        display: block;
+      }
+      .menu-box{
+        padding: 8px 20px;
+      }
+      .menu-box > ul > li > a {
+        display: block;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      /* 하이라이트효과 */
+      .menu-box > ul > li > a:hover {
+        color: black;
+        background-color: aliceblue;
+      }
+      
+      /* 가상요소 */
+      /* only child=외동 */
+      .menu-box > ul > li > a:not(:only-child):after {
+        /* 형제가 없는 a요소는 제외함 */
+        content: " [+]";
+      }
+      
+      .menu-box>ul>li:hover>a:not(:only-child)::after{
+        content: "  [-]";
+      }
+      .sub1{
+        display: none;
+      }
+      .menu-box>ul>li:hover>.sub1{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="status-icon">
+        <div>▶</div>
+        <div>▼</div>
+      </div>
+      <!-- nav생성 -->
+      <nav class="menu-box">
+        <ul>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">1차 메뉴 아이템</a>
+            <ul class="sub1">
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+              <li><a href="#">2차 메뉴 아이템</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      header,
+      section,
+      footer {
+        width: 1000px;
+        height: 900px;
+        margin: 0 auto;
+      }
+      header {
+        background-color: yellow;
+      }
+      section {
+        background-color: lightgreen;
+      }
+      footer {
+        background-color: skyblue;
+      }
+      .fixed_menu{
+        width: 80px;
+        background-color: ghostwhite;
+        text-align: center;
+        font-size: 14px;
+        user-select: none;
+        position: fixed;
+        /* 가운데를 기준잡고 고정값으로 이동 */
+        left: 50%;
+        transform: translate(500px,50%);
+      }
+      .fixed_menu>.title{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: tomato;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      a{
+        display: block;
+        width: 100%;
+        padding: 30px 20px;
+        color: rgb(51, 51, 51);
+        
+        box-sizing: border-box;
+      }
+      /* 첫번째 li요소를 제외한 나머지 li요소 */
+      .btn>li+li>a{
+        border-top: 1px solid #999;
+      }
+      .top_btn{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: tomato;
+        color:aliceblue;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed_menu">
+      <div class="title">quick<br>Menu</div>
+      <ul class="btn">
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">menu</a></li>
+      </ul>
+      <div class="top_btn">TOP</div>
+    </div>
+    <header></header>
+    <section></section>
+    <footer></footer>
+  </body>
+</html>
