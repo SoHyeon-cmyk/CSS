@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>졸리다....</title>
+    <script src="https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid&pc=%23ffffff&sc=%23ffffff"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      section{
+        width: 100%;
+        min-width: 800px;
+        height: 500px;
+        background: #38507b url(/이미지예제/attachment/searchbg.jpg) center/cover;
+        color: aliceblue;
+        line-height: 1.6;
+        padding-top: 80px;
+        text-align: center;
+      }
+      section> .wrap{
+        width: 800px;
+        margin: 0 auto;
+      }
+      section h1{
+        font-size: 32px;
+      }
+      section h2{
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 5px;
+      }
+      section p {
+        font-size: 16px;
+        margin: 20px 0 40px;
+        font-weight: 100;
+      }
+      form>input{
+        width: 740px;
+        height: 60px;
+        float: left;
+        border: 0;
+        outline: none;
+        text-indent: 20px;
+        font-size: 18px;
+      }
+      form>button{
+        float: left;
+        width: 60px;
+        height: 60px;
+        background-color: #ffffff;
+        border: 0;
+      }
+      img{
+        width: 40%;
+      }
+      .bm>img{
+        width: 10px;
+      }
+      .popural{
+        text-align: left;
+        line-height: 20px;
+        margin-top: 10px;
+      }
+      .popural>div{
+        float: left;
+        margin: 10px
+        
+      }
+      .ranking>div{
+        float: left;
+      }
+      .index{
+        width: 18px;
+        line-height: 18px;
+        background-color: aliceblue;
+        color: gray;
+        text-align: center;
+        font-weight: bold;
+        margin:0 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="wrap">
+        <h1>공연예술 아카이브 네트워크 통합 검색</h1>
+        <h2><b>K</b>orea <b>P</b>erforming <b>A</b>rt <b>A</b>rchives</h2>
+        <p>
+          국립국악원, 국립극장, 국립무형유산원, 한국문화예술위원회 등 4개
+          기관의<br />
+          공연예술 아카이브를 통합 검색하여 편리하게 이용 할 수 있습니다.
+        </p>
+        <form class="clearfix">
+          <input type="text" />
+          <button>
+            <img src="/이미지예제/attachment/magnifying-glass-solid.svg" alt="">
+          </button>
+        </form>
+        <div class="popural">
+          <div class="bm"><img src="/이미지예제/attachment/bookmark-solid.svg" alt="">인기검색어
+          </div>
+          <div class="ranking">
+            <div class="index">1</div>
+            <div class="txt">판소리</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
