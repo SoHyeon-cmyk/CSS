@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul,li{
+      list-style: none;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    .nav{
+      height: 80px;
+      background-color: gainsboro;
+      display: flex;
+      justify-content: flex-end;/*주측정렬*/
+      align-items: center;/*교차축 정렬*/
+    }
+    .nav>li> a{
+      display: block;
+      padding: 0 20px;
+      font-weight: bold;
+    }
+    .nav>li:hover>a{
+      color: aliceblue;
+      background-color: rgb(56, 56, 56);
+    }
+    /* 미디어쿼리 */
+    @media (max-width:600px){/*뷰포트의 넓이가 600px이하일 때, 아래 코드 적용*/
+      .nav{
+        height: auto;
+        flex-direction: column;
+      }
+      .nav>li{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</body>
+</html>

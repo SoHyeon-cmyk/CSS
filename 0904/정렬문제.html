@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {margin: 0; padding: 0;}
+
+      ul,li {list-style: none;}
+
+      a {text-decoration: none; color: inherit; }
+
+      nav {
+        margin: 0 auto;
+        width: auto;
+      }
+      .login {
+        background-color: rgb(66, 66, 66);
+        height: 40px;
+        min-width: 1200px;
+      }
+      .container {
+        color: aliceblue;
+      }
+      .container > ul {
+        display: flex;
+        justify-content: flex-end;
+        line-height: 40px;
+        box-sizing: border-box;
+      }
+      .container > ul > li {
+        margin-right: 40px;
+      }
+      .login>.container>ul>li:hover{
+        color: orange;
+      }
+      .menu {
+        min-width: 1200px;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      .menu > .container {
+        height: 80px;
+        background-color: orange;
+        display: flex;
+        padding: 0 0 0 40px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .menu > ul > li {
+        margin-right: 40px;
+      }
+      .menu li:hover{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="login">
+        <div class="container">
+          <ul>
+            <li><a href="#">login</a></li>
+            <li><a href="#">join us</a></li>
+            <li><a href="#">member</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <h1>Logo</h1>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
