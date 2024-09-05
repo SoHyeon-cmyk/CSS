@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스파게티 코드t</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 1080px;
+      height: 480px;
+      margin: auto;
+      position: relative;
+      margin-top: 5%;
+      display: flex;
+    }
+    .box1{
+      display: flex;
+    }
+    .box1>img{
+      width: 360px;
+      height: 480px;
+    }
+    nav{
+      position: absolute;
+      top: 3%;
+      left: 4%;
+      color: aliceblue;
+    }
+    .box1>.txt>h1{
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+    .box1>.txt>ul>li{
+      line-height: 25px;
+      font-weight: bold;
+    }
+    .box2>.banner>.bg{
+      position: relative;
+    }
+    .box2>.banner>.logo{
+      position: absolute;
+      left: 35%;
+      top: 25%;
+    }
+    .box2 h2{
+      position: absolute;
+      top: 10%;
+      left: 34.5%;
+      font-size: 20px;
+      color: aliceblue;
+    }
+    .box2>nav{
+      position: absolute;
+      right: 0%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <img src="/이미지예제/image2/layout01.png" alt="" class="bg">
+      <nav class="txt">
+        <h1>제품기획&#183;개발&#183;생산</h1>
+        <ul>
+          <li>UV 소독</li>
+          <li>CLEAN</li>
+          <li>소형가전</li>
+          <li>BEAUTY</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="box2">
+      <div class="banner">
+      <img src="/이미지예제/image2/layout02.png" alt="" class="bg">
+      <img src="/이미지예제/image2/global_nobel.png" alt="" class="logo">
+      <h2>국내를 넘어 <br> 세게로 도약하는 기업</h2>
+      </div>
+      <nav>
+        <h1>Research & Develop</h1>
+        <ul>
+          <li>센서 개발</li>
+          <li>UV LED 적용 기술</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="box3">
+      <!-- <img src="/이미지예제/image2/layout03.png" alt="" class="bg"> -->
+        <h1></h1>
+      </img>
+      <nav>
+        <h1></h1>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

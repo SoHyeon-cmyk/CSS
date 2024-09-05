@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wireframe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    #container {
+      width: 800px;
+      height: 100%;
+      margin: auto;
+    }
+
+    header {
+      width: 760px;
+      height: 115px;
+      border: 1px solid black;
+      position: relative;
+      margin: 10px 20px;
+    }
+
+    header>img {
+      width: 160px;
+      height: 100px;
+      border: 1px solid black;
+      position: absolute;
+      background-size: cover;
+      top: 5px;
+      left: 5px;
+    }
+
+    header>.txt {
+      width: 140px;
+      height: 20px;
+      border: 1px solid black;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    header ul {
+      width: 450px;
+      height: 40px;
+      border: 1px solid black;
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    header li {
+      border: 1px solid black;
+      width: 100px;
+      height: 20px;
+    }
+
+    .banner{
+      width: 760px;
+      height: 240px;
+      border: 1px solid black;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    main {
+      width: 760px;
+      height: 510px;
+      border: 1px solid black;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .png1,.png2,.png3{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 5px;
+  }
+    
+    .png1>img:first-child {
+      width: 490px;
+      height: 160px;
+      border: 1px solid black;
+    }
+
+    .png1>img:nth-of-type(2) {
+      width: 240px;
+      height: 160px;
+      border: 1px solid black;
+    }
+  .png2>img{
+    width: 240px;
+    height: 160px;
+    border: 1px solid black;
+  }
+.png3>img:first-child{
+  width: 240px;
+  height: 160px;
+  border: 1px solid black;
+}
+.png3>img:last-child{
+  width: 490px;
+  height: 160px;
+  border: 1px solid black;
+}
+footer{
+  width: 760px;
+  height:90px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+footer>img{
+  width: 160px;
+  height: 80px;
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.txt>div{
+  width: 240px;
+  height: 20px;
+  border: 1px solid black;
+  position: absolute;
+}
+.txt>div:last-child{
+right: 1%;
+bottom: 5%;
+}
+.txt>div:first-child{
+  right: 34%;
+  bottom: 5%;
+}
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <img src="https://picsum.photos/160/100" alt="" class="logo hd">
+      <div class="txt"></div>
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner"></div>
+    <main>
+      <div class="png1">
+        <img></img>
+        <img></img>
+      </div>
+      <div class="png2">
+        <img></img>
+        <img></img>
+        <img></img>
+      </div>
+      <div class="png3">
+        <img></img>
+        <img></img>
+      </div>
+    </main>
+    <footer>
+      <img src="https://picsum.photos/160/80" alt="" class="logo ft">
+<div class="txt">
+  <div></div>
+  <div></div>
+</div>
+    </footer>
+  </div>
+</body>
+</html>
