@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>필터효과</title>
+  <style>
+    div{
+      width: 650px;
+      margin: 100px auto;
+      border: 1px solid gainsboro;
+      padding: 10px;
+    }
+    div>img{
+      width: 200px;
+      margin: 6px;
+    }
+    /* 블러 */
+    div>img:nth-child(2){
+      filter: blur(5px);
+    }
+    /* 밝기조절,1 이하부턴 어두워짐 */
+    div>img:nth-of-type(3){
+      filter: brightness(0.5);
+    }
+    /* 100%이하는 대비가 낮아지고, 넘어가면 높아짐 */
+    div>img:nth-of-type(4){
+      filter: contrast(150%);
+    }
+    /* 100%에 가까울수록 흑백 */
+    div>img:nth-of-type(5){
+      filter: grayscale(100%);
+    }
+    /* 360beg내에서 색상변경 */
+    div>img:nth-of-type(6){
+      filter: hue-rotate(210deg);
+    }
+    /* 100%가까울수록 색상반전 */
+    div>img:nth-of-type(7){
+      filter: invert(100%);
+    }
+    /* 1이하부턴 채도가 낮아짐, 넘어가면 진해짐  */
+    div>img:nth-of-type(8){
+      filter:saturate(0.5) ;
+    }
+    /* 100%에 인접할수록 갈색톤이 나옴 */
+    div>img:nth-of-type(9){
+      filter: sepia(100%);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+    <img src="/이미지예제/unsplash/rose.jpg" alt="장미">
+  </div>
+</body>
+</html>

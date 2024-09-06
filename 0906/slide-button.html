@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slide-button</title>
+  <style>
+    .main{
+      width: 800px;
+      height: 700px;
+      background-color: lightyellow;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .sidenav>a{
+      text-decoration: none;
+      position: absolute;
+      width: 100px;
+      padding: 15px;
+      font-size: 20px;
+      color: aliceblue;
+      background-color: gray;
+      border-radius: 0 5px 5px 0;
+      left: -100px;
+      transition: left ,0.5s;
+    }
+    .sidenav>a:hover{
+      left: 0;
+    }
+    #about{
+      top: 20px;
+      background-color: chocolate;
+    }
+    #blog{
+      top: 80px;
+      background-color: cadetblue;
+    }
+    #project{
+      top: 140px;
+      background-color: tomato;
+    }
+    #contact{
+      top: 200px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="sidenav">
+      <a href="#" id="about">About</a>
+      <a href="#" id="blog">Blog</a>
+      <a href="#" id="project">Project</a>
+      <a href="#" id="contact">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

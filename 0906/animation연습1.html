@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 500px;
+      height: 500px;
+      margin: 300px auto 0;
+      animation: move ease-in-out 2s infinite;
+      animation-fill-mode: forwards;
+    }
+    @keyframes move{
+      0%{transform: translate(0); scale: 1;}
+      50%{transform: translate(0, -150px);scale: 1.2;}
+      100%{transform: translate(0); scale: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div><img src="/이미지예제/bokeh/balloon.png" alt=""></div>
+</body>
+</html>

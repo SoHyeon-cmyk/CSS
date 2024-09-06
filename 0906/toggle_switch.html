@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toggle_switch</title>
+  <style>
+    .switch{
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch>input{
+      display: none;
+    }
+    .slider{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: gainsboro;
+      cursor: pointer;
+      transition:all 0.4s;
+    }
+    .slider::after{
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background-color: white;
+      left: 4px;
+      bottom: 4px;
+      transition:transform .4s;
+    }
+    input:checked+.slider{
+      background-color: pink;
+    }
+    input:checked+.slider::after{
+      transform: translateX(26px);
+    }
+    .round{
+      border-radius: 34px;
+    }
+    .round::after{
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider"></span>
+  </label>
+
+  <br><br>
+
+
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</body>
+</html>

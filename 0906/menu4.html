@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      width: 1000px;
+      height: 400px;
+      margin: auto;
+      margin-top: 50px;
+      border-right: 1px solid gainsboro;
+      border-bottom: 1px solid gainsboro;
+      border-top: 3px solid green;
+      z-index: 80;
+    }
+
+    input {
+      width: 100px;
+      height: 30px;
+      border-radius: 3px;
+      border: 1px solid rgb(133, 133, 133);
+      text-indent: 10px;
+    }
+
+    .idnumber1 {
+      width: 80px;
+    }
+
+    .idnumber2 {
+      width: 10px;
+      border-radius: 3px;
+    }
+
+    input[type=button] {
+      text-indent: 0;
+      cursor: pointer;
+      background-color: rgb(104, 104, 104);
+      border: 0;
+      color: white;
+    }
+
+    select {
+      border-radius: 5px;
+      height: 30px;
+    }
+
+    input[type=tel] {
+      width: 60px;
+    }
+
+    td {
+      border-left: 1px solid gainsboro;
+      border-top: 1px solid gainsboro;
+      padding: 20px;
+    }
+
+    .address {
+      margin: 5px;
+      width: 150px;
+    }
+
+    .ad1 {
+      width: 220px;
+    }
+
+    .ad2 {
+      width: 120px;
+    }
+
+    input[type=email] {
+      width: 130px;
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      background-color: gold;
+      border-radius: 5px;
+      border: 0;
+      margin: 10px 45%;
+    }
+
+    input[type=radio] {
+      width: 20px;
+      margin-left: 10px;
+      transform: translateY(10px);
+      margin-bottom: 12px;
+    }
+
+    label {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <tbody>
+        <tr>
+          <td>&#42;후원자 구분</td>
+          <td>
+            <label for="personal">개인<input type="radio" name="" id="personal"></label>
+            <label for="industry">기업<input type="radio" name="" id="industry"></label>
+            <label for="organization">단체
+              <input type="radio" name="" id="organization"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>&#42;성명</td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td>&#42;주민번호</td>
+          <td>
+            <input type="password" class="idnumber1" maxlength="6"> &#45;
+            <input type="password" class="idnumber2" maxlength="1"> &#42;&#42;&#42;&#42;&#42;&#42;
+          </td>
+        </tr>
+        <tr>
+          <td>&#42;연락처</td>
+          <td>
+            <select name="" id="number">
+              <option value="010">010</option>
+              <option value="011">011</option>
+            </select>
+            &#45
+            <input type="tel" maxlength="4">&#32&#45 <input type="tel" maxlength="4">
+          </td>
+        </tr>
+        <tr>
+          <td>&#42;주소</td>
+          <td>
+            <input type="text" id="address" class="address ad0"> <input type="button" value="우편번호찾기"> <br>
+            <input type="text" id="address" class="address ad1"><input type="text" id="address" placeholder="상세주소"
+              class="address ad2">
+          </td>
+        </tr>
+        <tr>
+          <td>&#42;이메일</td>
+          <td><input type="email"> &#64; <input type="email">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit">다음단계</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      animation-name:color-change ; /*애니메이션 이름*/
+      animation-duration: 4s;/*실행 시간*/
+      animation-delay: 1s; /*지연 시간*/
+      animation-iteration-count: 3; /*반복 횟수*/
+      animation-direction: alternate;/*애니메이션 방향*/ /*alternate 똑바로 한번 재생*/
+      animation-timing-function: linear; /*타이밍 제어*/
+    }
+    @keyframes color-change{
+      from/*시작프레임*/{background-color: darkcyan;}
+      to/*끝나는 프레임*/{background-color: tomato;}
+    }
+    .b1{
+      margin-top: 10px;
+      animation: exemple 5s linear 2s infinite alternate;
+    }
+    @keyframes exemple{
+      0%{background-color: red; transform: translate();}
+      25%{background-color: orange; transform: translate(200px ,0);}
+      50%{background-color: yellow; transform: translate(200px, 200px);}
+      75%{background-color: lightgreen; transform: translate(0, 200px);}
+      100%{background-color: blue; transform: translate();}
+    }
+    /* forward대상은 실행된 애니메이션의 마지막 keframe에 의해 설정된 계산값을 유지 */
+    /* backwards 대상은 애니메이션 실행 후 첫번쨰 keframe에 의해 정의값 적용 
+    playstae
+    paused=일시정지
+    running=재생*/
+
+    .b2{
+      animation: scale 2s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes scale{
+      0%{width: 100px; height: 100px;}
+      100%{width: 500px; height: 500px;}
+    }
+    .b2:hover{
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="box b1"></div>
+  <div class="box b2"></div>
+</body>
+</html>

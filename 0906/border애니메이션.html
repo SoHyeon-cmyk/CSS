@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin-top: 20%;
+      text-align: center;
+    }
+    button{
+      background-color: transparent;
+      border: 0;
+      box-sizing: border-box;
+      padding: 1em 4em;
+      color: lightcoral;
+      font-size: 1rem;
+      font-weight: 600;
+      /* 자식요소의 border와 겹치기 위해 box-shadow로 테두리를 줌 */
+      box-shadow: inset 0 0 0 2px lightcoral;
+      transition: color .25s;
+      position: relative;
+    }
+    button::before,button::after{
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 0%;
+      height: 0%;
+      /* 처음엔 border값을 투명으로 줌 */
+      border: 2px solid transparent;
+    }
+    button::before{
+      top: 0; left: 0;
+    }
+    button::after{
+      bottom: 0; right: 0;
+    }
+    button:hover{
+      color: lightskyblue;
+    }
+    /* 마우스 오버시 가상요소 넓이,높이 100%변경 */
+    button:hover::after,button:hover::before{
+      width: 100%; height: 100%;
+    }
+    /* border가 그려지는 애니메이션 */
+    button:hover::before{
+      border-top-color: skyblue ;
+      border-right-color: skyblue;
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    }
+    button:hover::after{
+      border-bottom-color:skyblue ;
+      border-left-color: skyblue;
+      transition: border-color 0s 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    }
+  </style>
+</head>
+<body>
+  <button> draw</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rotate</title>
+  <style>
+    .box{
+      width: 400px;
+      height: 300px;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+    .logo{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .rotate{
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(0deg, red 0%, #4a569d 100%);
+      position: absolute;
+      left: calc(50% - 250px);
+      top: calc(50% - 250px);
+      animation: spin 4s linear infinite;
+    }
+    @keyframes spin{
+      100%{transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="rotate"></div>
+    <img class="logo" src="/이미지예제/bg/logo.png" alt="">
+  </div>
+</body>
+</html>
